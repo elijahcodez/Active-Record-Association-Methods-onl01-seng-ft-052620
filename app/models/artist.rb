@@ -7,10 +7,10 @@ class Artist < ActiveRecord::Base
   end
 
   def song_count
-    self.songs.all.length
+    self.songs.count
   end
 
   def genre_count
-    self.genres.length
+    self.genres.count
   end
 end
